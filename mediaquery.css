@@ -1,0 +1,78 @@
+@media screen and (max-width:1433px){
+    header {
+        position: relative;
+    }
+    .logo{
+        margin: 0 30px;
+        width: 50%;
+        text-align: right;
+    }
+    nav{
+        position: absolute;
+    }
+    nav label.checkbar{
+        display: block;
+    }
+    nav ul{
+        width: 60%;
+        height: 100vh;
+        background-color: #fff;
+        border: 2px solid #ebe9e9;
+        position: fixed;
+        top: 122px;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .icon-menu{
+        position: fixed;
+        right: 0;
+    }
+}
+
+@media screen and (max-width:573px){
+    .logo{
+        width: 60%;
+        text-align: center;
+    }
+
+    .icon-menu{
+        width: 40%;
+        display: block;
+    }
+
+    nav ul{
+        height: 100vh;
+        overflow: auto;
+    }
+
+    nav ul li{
+        display: block;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:357px){
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .icon-menu{
+        display: none;
+    }
+
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        overflow: scroll;
+    }
+}
