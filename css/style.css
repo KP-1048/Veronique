@@ -256,21 +256,71 @@ section{
     cursor: pointer;
 }
 
-.business-info2::after{
+.business-info2 .row{
+    border: 1px solid #333;
+    height: 300px;
+}
+
+.business-info2 .row::after{
     content: "";
     display: table;
     clear: both;
-    outline-offset: 15px solid #333;
 }
 
 .business-info2 .col30{
     width: 30%;
     float: left;
+    padding: 20px;
+}
+
+.business-info2 .row .col30 img{
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.2);
 }
 
 .business-info2 .col70{
     width: 70%;
     float: left;
     background-color: #333;
-    padding: 1%;
+    padding: 5%;
+}
+
+.business-info2 .col70 h1{
+    font-size: 2.5rem;
+}
+
+.business-info2 .col70 p{
+    color: #8c8c8c;
+    font-size: 1rem;
+}
+
+.track-order .row{
+    width: 100%;
+    border: 1px solid #333;
+}
+
+.track-order .row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.track-order .col50{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.track-order .col50 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.track-order .col50 ~ .detail{
+    background-color: #333;
+    float: left;
+}
+
+.track-order .col50 p{
+    color: #f2f2f2;
 }
