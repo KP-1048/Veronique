@@ -296,6 +296,7 @@ section{
 .track-order .row{
     width: 100%;
     border: 1px solid #333;
+    box-sizing: border-box;
 }
 
 .track-order .row::after{
@@ -304,23 +305,43 @@ section{
     clear: both;
 }
 
-.track-order .col50{
+.col50{
     width: 50%;
     height: 100%;
     float: left;
 }
 
-.track-order .col50 img{
+.col50 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.track-order .col50 ~ .detail{
+.col50 .detail{
     background-color: #333;
     float: left;
+    padding: 6.2% ;
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.track-order .col50 p{
+.col50 p{
     color: #f2f2f2;
+    font-family: Lora;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-left: 1%;
 }
+
+.track-order .col50 .trackbtn{
+    padding: 14px 22px;
+    font-size: 1rem;
+}
+
+.womenempowerment .col50 .detail h1.first,
+.womenempowerment .col50 .detail h1.second,
+.womenempowerment .col50 .detail p{
+    width: 100%;
+    text-align: center;
+} 
